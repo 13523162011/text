@@ -1,0 +1,13 @@
+package com.xuecheng.framework.exception;
+
+import com.xuecheng.framework.model.response.ResultCode;
+
+public class ExceptionCast {
+    /**
+     * 使用此静态方法抛出自定义异常
+     * @param resultCode ResultCode 异常代码和异常信息
+     */
+    public static void cast(ResultCode resultCode){
+        throw new CustomException(resultCode);
+    }
+}

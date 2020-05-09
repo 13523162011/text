@@ -1,0 +1,11 @@
+package com.xuecheng.api.ucenter;
+
+import com.xuecheng.framework.domain.ucenter.ext.XcUserExt;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api(value = "用户中心" ,description = "用户管理中心")
+public interface UcenterControllerApi {
+    @ApiOperation( "根据用户的账号查询用户信息，包括权限和公司信息" )
+    public XcUserExt getUserext(String username);
+}

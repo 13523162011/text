@@ -145,6 +145,7 @@ public class FreeMarkerServer {
     }
     private void text(){
         int i;
-        i=1;
+        i=2;
+
     }
 }
